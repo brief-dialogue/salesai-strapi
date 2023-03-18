@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_list_answers",
+  "info": {
+    "displayName": "answer List",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "answer": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
