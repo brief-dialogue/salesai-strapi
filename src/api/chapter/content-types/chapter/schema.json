@@ -13,10 +13,23 @@
   "pluginOptions": {},
   "attributes": {
     "heading": {
-      "type": "string"
+      "type": "string",
+      "required": true,
+      "unique": true
     },
     "content": {
-      "type": "richtext"
+      "type": "richtext",
+      "required": true
+    },
+    "quizzes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::quiz.quiz"
+    },
+    "subjective_questions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::subjective-question.subjective-question"
     }
   }
 }
